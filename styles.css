@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+.main-element {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border-radius: 20px;
+}
+
+.first-element {
+    background-color: white;
+    padding: 1.5rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.first-element h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.first-element .green-text {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.2rem;
+    margin: 1rem 5rem 1rem 0;
+}
+
+.first-element p {
+    color: hsl(218, 22%, 67%);
+    margin: 1rem 3.5rem 1rem 0rem;
+    line-height: 1.5rem;
+}
+
+.second-element {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.second-element {
+    padding: 1.5rem;
+}
+
+.second-element h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;;
+}
+
+#price-for-sub {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 1rem 0;
+}
+
+#price-for-sub #price {
+    color: white;
+    font-size: 2rem;
+}
+
+#price-for-sub #time-note {
+    margin-left: 1rem;
+    color: hsl(204, 43%, 93%);
+}
+
+h5 {
+    color: hsl(204, 43%, 93%);
+    font-size: 1.2rem;
+}
+
+#button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    width: 80%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.third-element {
+    padding: 1.5rem;
+    background-color: hsl(177, 54%, 53%);
+}
+
+.third-element .third-element-heading {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.third-element p {
+    margin: 1rem 6rem 1rem 0;
+    color: white;
+}
+
+@media (min-width: 800px){
+    .main-element {
+        width: 60%;
+        max-width: 800px;
+    }
+
+    .first-element {
+        width: 100%;
+    }
+
+    #two-elements {
+        display: flex;
+    }
+
+    .second-element {
+        flex-basis: 50%;
+    }
+
+    .third-element {
+        flex-basis: 50%;
+    }
+
+    .third-element p {
+        margin-top: 2rem;
+        margin-right: 7rem;
+    }
+}
